@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img.w-\[180px\].md\:w-\[205px\].position.left-\[1px\].bottom-\[40px\].h-auto {
+  position: absolute;
+  top: -14px;
+  left: 0;
+}
+@media (max-width: 768px) {
+  img.w-\[180px\].md\:w-\[205px\].position.left-\[1px\].bottom-\[40px\].h-auto {
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-text {
+  animation: scroll-text 20s linear infinite;
+}
+@media (max-width: 768px) {
+  .leading-\[90px\] {
+    line-height: 46px;
+  }
+}
